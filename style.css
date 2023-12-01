@@ -1,0 +1,127 @@
+/* Color Palette: 
+Green (dark):     
+    #0e2d0d
+    rgba (14, 45, 13, 1)
+Orange (light): 
+    #eda579
+    rgba (237, 165, 121, 1)
+Yellow (light):
+    #e3b974
+	rgba (227, 185, 116, 1)
+
+Fonts: 
+Serif: Courier
+Sans-Serif: Helvetica
+*/
+
+header{
+    align-content: left;
+    width:50%;
+    display:inline;
+}
+
+header h1{
+    font-family: Helvetica, Arial, sans-serif; 
+    font-size: 3em;
+    font-weight: normal;
+    display: inline;
+    text-align: center;
+}
+
+header h2{
+    font-family: Helvetica, Arial, sans-serif; 
+    font-size: 1.75em;
+    font-weight: normal;
+    display:inline;
+}
+
+header a{
+    text-decoration: none;
+}
+
+header a:hover{
+    text-decoration: none;
+}
+
+nav{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 90%;
+    font-weight: bolder;
+    padding: 10px 0;
+    margin-right:10px;
+    text-align: right;
+    width: 40%;
+    float:right;
+    line-height: 3em;
+}
+
+nav a{
+    text-decoration: none;
+    color:#e3b974;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+nav a:hover{
+    color:#eda579;
+    background-color: black;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: rgba(14, 45, 13, 1);
+    background-image:url(noise.svg);
+    background-blend-mode: multiply;
+    padding: 0 5%;
+    /* background: linear-gradient(#0e2d0d,black);
+    filter: url('noise.svg'); */
+    color: #e3b974;
+    /* font-family: 'Courier New', Courier, monospace;
+    font-size: 2em;
+    font-weight: bold;  */
+}
+
+h1{
+    font-size: 32px;
+    display:block;
+    width: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+h1:hover{
+    background-color: black;
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color:#e3b974;
+    display:block;
+}
+
+body p:hover{
+    background-color: black;
+}
+
+a{
+    color:#eda579;
+}
+
+a:hover{
+    color:black;
+    background-color: #eda579;
+}
+
+footer a{
+    color:#eda579;
+}
+
+footer a:hover{
+    color: black;
+    background-color: #eda579;
+}
+
+button{}
+
+button:hover{}

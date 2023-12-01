@@ -1,0 +1,19 @@
+<svg
+  xmlns='http://www.w3.org/2000/svg'
+  xmlns:xlink='http://www.w3.org/1999/xlink'
+  width='300' height='300'>
+
+    <filter id='n' x='0' y='0'>
+            <feTurbulence
+              type='perlinNoise'
+              baseFrequency='0.80'
+              stitchTiles='stitch'/>
+    </filter>
+
+    <rect width='300' height='300' fill='#fff'/>
+    <rect width='300' height='300' filter="url(#n)" opacity='0.80'/>
+</svg>
+
+<!-- Source: https://css-tricks.com/grainy-gradients/ 
+this site details how to use SVG filters and color gradients to change smaller elements; 
+I adapted it to create a single-color grainy background-->
