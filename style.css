@@ -317,7 +317,7 @@ footer#hmpg-foot{
   
 
  /* Responsive layout - 2 columns */
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
     .row{
         display: block;
         padding:0;
@@ -335,28 +335,14 @@ footer#hmpg-foot{
     }
     .column, .column2s {
     width: 100%;
-    flex: 50%;
-    max-width: 50%;
+    flex: 100%;
+    max-width: 100%;
     padding:0;
     margin: 2px;
+    display: inline-block;
     }
   }
-  
-  /* Responsive styles for screens up to 600px */
-@media (max-width: 600px) {
-    .column2s {
-    flex: 100%; /* Full width for smaller screens */
-    max-width: 100%;
-    }
-  }
-  
-  /* Responsive styles for screens between 601px and 800px */
-  @media (min-width: 601px) and (max-width: 800px) {
-    .column2s {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
+
 
   /* overlay source: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
 
@@ -395,25 +381,6 @@ footer#hmpg-foot{
 }
 #item6{
     background-image: url(photos/pelosky-compressed/img1-hmpg.jpg);
-}
-
-@media screen {
-
-    .bgimg:nth-child(1){
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-        box-shadow: 5px 5px 5px #051005;
-        display: block;
-        z-index: 222222;
-    }
-
-    .bgimg .content{
-        width: 100%;
-        display: block;
-        z-index: 222222;
-        position: relative;
-    }
 }
 
 .bgimg:nth-child(1){
@@ -503,13 +470,6 @@ footer#hmpg-foot{
     animation: showcontent 1s ease-in-out 1 forwards;
 }
 
-@media (max-width: 600){
-    .bgimg .content{
-        right:50%;
-        transform: translate(50%, 50%);
-    }
-}
-
 .bgimg .description{
     font-size: 1em;
     color: #e3b974;
@@ -579,4 +539,50 @@ footer#hmpg-foot{
 a.button_s:hover{
     text-decoration: none;
     background-color: none;
+}
+
+  /* Responsive styles for screens up to 600px */
+  @media (max-width: 600px) {
+    .column2s {
+    flex: 100%; /* Full width for smaller screens */
+    max-width: 100%;
+    }
+  }
+  
+  /* Responsive styles for screens between 601px and 800px */
+  @media (min-width: 601px) and (max-width: 800px) {
+    .column2s {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+@media (max-width: 600){
+
+    .container{
+        width: 100%;
+        display: block;
+    }
+
+    .bgimg:nth-child(1){
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px #051005;
+        transform: translate(0, -50%);
+        display: block;
+        z-index: 222222;
+    }
+
+    .bgimg .content{
+        width: 100%;
+        display: block;
+        z-index: 222222;
+        position: relative;
+    }
+
+    .bgimg .content{
+        right:50%;
+        transform: translate(50%, 50%);
+    }
 }
