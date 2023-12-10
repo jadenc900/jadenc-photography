@@ -556,15 +556,16 @@ a.button_s:hover{
 
     .container {
         display: flex;
-        width: 90%;
+        width: 100%;
+        align-items: center;
     }
 
     .bgimg:nth-child(1){
-        right:0;
-        /* top: 20%; */
-        transform: translate(0,0);
+        left:0;
+        top: 20%;
+        transform: translate(10%,0);
         border-radius: 10px;
-        width: 100%;
+        width: 80%;
         height: 60%;
         box-shadow: 20px 10px 20px #051005;
         display: inline-block;
@@ -572,7 +573,7 @@ a.button_s:hover{
     }
   
     .bgimg:nth-child(1) .content{
-        position: fixed;
+        position: relative;
         width: 90%;
         right: 0;
         display: block;
@@ -580,7 +581,7 @@ a.button_s:hover{
     }
 
     .bgimg:nth-child(2){
-        left:0;
+        left: 10%;
         bottom: 0;
         display: block;
         box-shadow: 5px 5px 5px #051005;
@@ -589,8 +590,8 @@ a.button_s:hover{
     }
     
     .bgimg:nth-child(3){
-        left: 0;
-        bottom: 10%;
+        left: 10%;
+        bottom: 3%;
         display: block;
         box-shadow: 5px 5px 5px #051005;
         z-index: 222;
@@ -598,14 +599,14 @@ a.button_s:hover{
     
     .bgimg:nth-child(4){
         bottom: 20%; 
-        /* bottom: 0; */
+        left: 6%;
         box-shadow: 5px 5px 5px #051005;
         z-index: 22;
     }
     
     .bgimg:nth-child(5){
         bottom: 30%; 
-        /* bottom: 0; */
+        left: 9%;
         box-shadow: 5px 5px 5px #051005;
         z-index: 2;
     }
@@ -614,6 +615,15 @@ a.button_s:hover{
         left:30%;
         opacity: 0;
         bottom: 0;
+    }
+
+    .buttons{
+        position: absolute;
+        right: 0;
+        bottom: 25%;
+        z-index: 222222;
+        text-align: center;
+        width: 100%;
     }
   }
 
