@@ -176,28 +176,46 @@ footer#hmpg-foot{
     bottom: 0;
 }
 
-@media screen and (max-width: 600px) {
+/* Responsive styles for screens up to 600px */
+@media (max-width: 600px) {
 
-    /* turn nav menu into a hamburger menu or dropdown menu ?? */
-    header {
-        padding: 10px;
-    }
-  
+    /* Hamburger menu for smaller screens */
     nav.dropdown button {
-        padding: 10px;
+      display: block;
+      padding: 10px;
+      background-color: #333; /* Background color for the button */
+      color: white; /* Text color for the button */
+      border: none;
+      cursor: pointer;
     }
   
     nav.dropdown .content {
-        padding: 10px;
+      display: none;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav.dropdown.active .content {
+      display: flex;
+    }
+  
+    nav.dropdown .content a {
+      padding: 10px;
+      text-decoration: none;
+      color: black; /* Text color for the links in the dropdown menu */
+      display: block;
+      background-color: #f1f1f1; /* Background color for the links in the dropdown menu */
     }
   
     section.homepage {
-        width: 100%;
+      width: 100%;
+      max-width: none; /* Remove max-width for full width on smaller screens */
     }
   
     aside {
-        width: 100%;
-        margin-top: 10px;
+      width: 100%;
+      margin-top: 10px;
+      margin-left: 0; /* Remove margin-left for full width on smaller screens */
     }
   }
 
@@ -359,6 +377,25 @@ footer#hmpg-foot{
     width:max-content;
     margin-top: 50px;
     height: 100%;
+}
+
+#item1{
+    /* background-image: url(photos/edm-compressed/img1-hmpg.jpg); */
+}
+#item2{
+    /* background-image: url(photos/fpn-compressed/img1-hmpg.jpg); */
+}
+#item3{
+    /* background-image: url(photos/henry-compressed/img1w-hmpg.jpg); */
+}
+#item4{
+    /* background-image: url(photos/edm-compressed/img2-hmpg.jpg); */
+}
+#item5{
+    /* background-image: url(photos/fpn-compressed/img2-hmpg.jpg); */
+}
+#item6{
+    /* background-image: url(photos/pelosky-compressed/img1-hmpg.jpg); */
 }
 
 .bgimg:nth-child(1){
