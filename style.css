@@ -361,25 +361,6 @@ footer#hmpg-foot{
     height: 100%;
 }
 
-/* #item1{
-    background-image: url(photos/edm-compressed/img1-hmpg.jpg);
-}
-#item2{
-    background-image: url(photos/fpn-compressed/img1-hmpg.jpg);
-}
-#item3{
-    background-image: url(photos/henry-compressed/img1w-hmpg.jpg);
-}
-#item4{
-    background-image: url(photos/edm-compressed/img2-hmpg.jpg);
-}
-#item5{
-    background-image: url(photos/fpn-compressed/img2-hmpg.jpg);
-}
-#item6{
-    background-image: url(photos/pelosky-compressed/img1-hmpg.jpg);
-} */
-
 .bgimg:nth-child(1){
     right: 30%;
     top: 20%;
