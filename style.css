@@ -217,6 +217,10 @@ footer#hmpg-foot{
       margin-top: 10px;
       margin-left: 0; /* Remove margin-left for full width on smaller screens */
     }
+
+    h2{
+        font-size: 1em;
+    }
   }
 
   /* photo gallery */
@@ -229,11 +233,11 @@ footer#hmpg-foot{
     justify-content: center;
   }
   
-  .column {
-    flex: 30%;
-    max-width: 33%;
-    padding: 0 4px;
-    position: relative;
+  .column, .colum2s{
+    column-width: 310px;
+  }
+  .column{
+    column-count: 3;
   }
 
   .column2s {
@@ -305,50 +309,25 @@ footer#hmpg-foot{
     z-index: 222222;
   }
   
-    /* responsive layout - 2 column
-  @media screen and (max-width: 800px) {
-    .column, .column2s {
-      flex: 50%;
-      max-width: 50%;
-    }
-
-    .column2s{
-        flex: 50%;
-        max-width: 50%;
-    }
-  }
-  
-  Responsive layout - 1 column
-  @media screen and (max-width: 600px) {
-    .column, .column2s {
-        flex: 100%;
-        max-width: 100%;
-    }
-
-    .column2s{
-        flex: 100%;
-        max-width: 100%;
-    }
- } */
 
  /* Responsive layout - 2 columns */
 @media screen and (max-width: 800px) {
-    .row{
+    /* .row{
         width: 100%;
     }
 
     .column, .column2s {
       flex: 50%;
       max-width: 50%;
-    }
+    } */
   }
   
   /* Responsive styles for screens up to 600px */
 @media (max-width: 600px) {
-    .column2s {
+    /* .column2s {
       flex: 100%; /* Full width for smaller screens */
       max-width: 100%;
-    }
+    } */
   }
   
   /* Responsive styles for screens between 601px and 800px */
@@ -396,6 +375,24 @@ footer#hmpg-foot{
 }
 #item6{
     background-image: url(photos/pelosky-compressed/img1-hmpg.jpg);
+}
+
+@media screen {
+    .bgimg:nth-child(1){
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 5px 5px 5px #051005;
+        display: block;
+        z-index: 222222;
+    }
+
+    .bgimg .content{
+        width: 100%;
+        display: block;
+        z-index: 222222;
+        position: relative;
+    }
 }
 
 .bgimg:nth-child(1){
@@ -483,6 +480,13 @@ footer#hmpg-foot{
     opacity: 0;
     text-shadow: 3px 3px 3px #051005;
     animation: showcontent 1s ease-in-out 1 forwards;
+}
+
+@media (max-width: 600){
+    .bgimg .content{
+        right:50%;
+        transform: translate(50%, 50%);
+    }
 }
 
 .bgimg .description{
