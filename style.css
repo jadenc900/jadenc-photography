@@ -262,6 +262,12 @@ footer#hmpg-foot{
     height: auto;
   }
 
+  .column img:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.5);
+    cursor: pointer;
+  }
+
   .column2s img {
     margin-top: 8px;
     width: 100%;
@@ -269,6 +275,13 @@ footer#hmpg-foot{
     background-position: 50% 50%;
     border-radius: 5px;
     height: auto;
+  }
+
+  .column2s img:hover{
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.5);
+    cursor: pointer;
+    z-index: 111111;
   }
 
   /* for overview pages */
