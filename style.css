@@ -15,8 +15,10 @@ Sans-Serif: Helvetica
 */
 body{
     background-color: rgba(14, 45, 13, 1);
+    /* film grain filter for the background */
     background-image:url(noise.svg);
     background-blend-mode: multiply;
+    /* ------ */
     padding: 0 5%;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -119,6 +121,7 @@ aside{
     line-height: 1.5em;
 }
 
+/* homepage images */
 .name{
     font-size: 2em;
     color: #e3b974;
@@ -216,8 +219,8 @@ footer#hmpg-foot{
   }
 
   .column2s {
-    flex: 30%;
-    max-width: 33%;
+    flex: 50%;
+    /* max-width: 50%; */
     padding: 0 4px;
     position: relative;
   }
@@ -234,6 +237,7 @@ footer#hmpg-foot{
   .column2s img {
     margin-top: 8px;
     width: 100%;
+    vertical-align: middle;
     background-position: 50% 50%;
     border-radius: 5px;
     height: auto;
@@ -283,19 +287,57 @@ footer#hmpg-foot{
     z-index: 222222;
   }
   
-    /* responsive layout - 2 column*/
+    /* responsive layout - 2 column
   @media screen and (max-width: 800px) {
-    .column {
+    .column, .column2s {
+      flex: 50%;
+      max-width: 50%;
+    }
+
+    .column2s{
+        flex: 50%;
+        max-width: 50%;
+    }
+  }
+  
+  Responsive layout - 1 column
+  @media screen and (max-width: 600px) {
+    .column, .column2s {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .column2s{
+        flex: 100%;
+        max-width: 100%;
+    }
+ } */
+
+ /* Responsive layout - 2 columns */
+@media screen and (max-width: 800px) {
+    .row{
+        width: 100%;
+    }
+
+    .column, .column2s {
       flex: 50%;
       max-width: 50%;
     }
   }
   
-  /* Responsive layout - 1 column */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
+  /* Responsive styles for screens up to 600px */
+@media (max-width: 600px) {
+    .column2s {
+      flex: 100%; /* Full width for smaller screens */
       max-width: 100%;
+    }
+  }
+  
+  /* Responsive styles for screens between 601px and 800px */
+  @media (min-width: 601px) and (max-width: 800px) {
+    .column2s {
+      flex: 50%;
+      max-width: 50%;
     }
   }
 
@@ -319,7 +361,7 @@ footer#hmpg-foot{
     height: 100%;
 }
 
-#item1{
+/* #item1{
     background-image: url(photos/edm-compressed/img1-hmpg.jpg);
 }
 #item2{
@@ -336,7 +378,7 @@ footer#hmpg-foot{
 }
 #item6{
     background-image: url(photos/pelosky-compressed/img1-hmpg.jpg);
-}
+} */
 
 .bgimg:nth-child(1){
     right: 30%;
