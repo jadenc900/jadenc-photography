@@ -248,7 +248,7 @@ footer#hmpg-foot{
 
   .column2s {
     flex: 50%;
-    /* max-width: 50%; */
+    max-width: 50%;
     padding: 0 4px;
     position: relative;
   }
