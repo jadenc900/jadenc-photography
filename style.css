@@ -154,7 +154,7 @@ a:hover{
 }
 
 footer{
-    width: 100%;
+    width: 90%;
     display:block;
     margin-top: 3%;
     font-family: 'Courier New', Courier, monospace;
@@ -315,34 +315,6 @@ footer#hmpg-foot{
     z-index: 222222;
   }
   
-
- /* Responsive layout - 2 columns */
-@media (max-width: 800px) {
-    .row{
-        display: block;
-        padding:0;
-        margin:0;
-    }
-
-    body{
-        padding: 0;
-        margin:0;
-    }
-
-    img{
-        width: 100%;
-        height: auto;
-    }
-    .column, .column2s {
-    width: 100%;
-    flex: 100%;
-    max-width: 100%;
-    padding:0;
-    margin: 2px;
-    display: inline-block;
-    }
-  }
-
 
   /* overlay source: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
 
@@ -541,19 +513,107 @@ a.button_s:hover{
     background-color: none;
 }
 
-  /* Responsive styles for screens up to 600px */
-  @media (max-width: 600px) {
-    .column2s {
-    flex: 100%; /* Full width for smaller screens */
-    max-width: 100%;
+
+ /* Responsive layout - 2 columns */
+ @media (max-width: 800px) {
+    .row{
+        display: block;
+        padding:0;
+        margin:0;
     }
-  }
-  
-  /* Responsive styles for screens between 601px and 800px */
-  @media (min-width: 601px) and (max-width: 800px) {
+
+    header h1,header h2{
+        font-size: 1em;
+    }
+
+    body{
+        padding: 5px;
+        margin:0;
+    }
+
+    nav{
+        width: 100%;
+        display: inline-block;
+    }
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .column, .column2s {
+    width: 100%;
+    flex: 100%;
+    max-width: 100%;
+    padding:0;
+    margin: 2px;
+    display: inline-block;
+    }
+
     .column2s {
-      flex: 100%;
-      max-width: 100%;
+        flex: 100%;
+        max-width: 100%;
+      }
+
+    .container {
+        display: flex;
+        width: 90%;
+    }
+
+    .bgimg:nth-child(1){
+        right:0;
+        /* top: 20%; */
+        transform: translate(0,0);
+        border-radius: 10px;
+        width: 100%;
+        height: 60%;
+        box-shadow: 20px 10px 20px #051005;
+        display: inline-block;
+        z-index: 22222;
+    }
+  
+    .bgimg:nth-child(1) .content{
+        position: fixed;
+        width: 90%;
+        right: 0;
+        display: block;
+        z-index: 222222;
+    }
+
+    .bgimg:nth-child(2){
+        left:0;
+        bottom: 0;
+        display: block;
+        box-shadow: 5px 5px 5px #051005;
+        display: inline-block;
+        z-index: 2222;
+    }
+    
+    .bgimg:nth-child(3){
+        left: 0;
+        bottom: 10%;
+        display: block;
+        box-shadow: 5px 5px 5px #051005;
+        z-index: 222;
+    }
+    
+    .bgimg:nth-child(4){
+        bottom: 20%; 
+        /* bottom: 0; */
+        box-shadow: 5px 5px 5px #051005;
+        z-index: 22;
+    }
+    
+    .bgimg:nth-child(5){
+        bottom: 30%; 
+        /* bottom: 0; */
+        box-shadow: 5px 5px 5px #051005;
+        z-index: 2;
+    }
+    
+    .bgimg:nth-child(n+6){
+        left:30%;
+        opacity: 0;
+        bottom: 0;
     }
   }
 
@@ -574,12 +634,12 @@ a.button_s:hover{
         z-index: 222222;
     }
 
-    .bgimg .content{
+    /* .bgimg .content{
         width: 100%;
         display: block;
         z-index: 222222;
         position: relative;
-    }
+    } */
 
     .bgimg .content{
         right:50%;
