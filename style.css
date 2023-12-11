@@ -177,6 +177,10 @@ footer#hmpg-foot{
     bottom: 0;
 }
 
+ul{
+    line-height: 1.5em;
+}
+
 /* Responsive styles for screens up to 600px */
 @media (max-width: 600px) {
     body{
