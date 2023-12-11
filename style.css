@@ -365,10 +365,11 @@ ul{
     transform: translate(0,0);
     border-radius: 10px;
     width: 75%;
-    height: 60%;
+    height: 70%;
     box-shadow: 20px 10px 20px #051005;
     display: inline-block;
     z-index: 22222;
+    animation: showcontent 1s;
 }
 
 .bgimg:nth-child(2){
