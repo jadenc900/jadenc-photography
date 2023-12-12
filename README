@@ -1,0 +1,55 @@
+1.	The main purpose of this website is as follows: 
+•	Showcasing Work: Through this website, I aim to present a curated selection of my best work to demonstrate my technical skills, style, and versatility.
+•	Portfolio Building: this website serves as my first attempt at a professional and visually appealing portfolio that can be easily shared with potential clients, collaborators, or employers.
+•	Personal Branding: Through the visual style, logo, and design of the website I aim to establish a personal style and brand, and convey some of my personality, to help in creating a memorable and recognizable online presence.
+•	Networking: By creating a custom online platform, I hope to foster connections with other professionals in the industry, potential clients, and collaborators. Thus, I plan to link this website to my social media and vice versa, as well as including it on my submitted resume and other platforms. 
+
+2.	Coding Languages Used
+•	HTML
+•	CSS
+•	JavaScript
+
+3.	File Structure
+•	There is a folder	 for non-photo files, such as my pdf resume (and later my pdf portfolio) for interested parties to download. 
+•	Photos are divided into two categories: commissions (hired and/or paid work) and portfolio (a.k.a. personal projects for creative practice, friends, class assignments, etc.).
+•	In each of these two folders, photos are further categorized by the project or job they were from, and these project folders’ photos are shown on the corresponding .html page with the same or similar name.
+
+4.	Accessibility Features:
+•	Semantic HTML: I implemented semantic HTML elements such as <header>, <nav>, <body>, etc., creating a detailed outline of the website's structure. Additionally, I incorporated ARIA (Accessible Rich Internet Applications) div classes to improve the understanding and navigation of dynamic content, ensuring a more accessible experience for all users, including those relying on screen readers.
+•	Color Contrast: I carefully selected color combinations using this color contrast checker, which uses WCAG standards, to ensure sufficient contrast between text and background colors. By adhering to accessibility guidelines, I aimed to enhance readability, particularly for users with visual impairments or color deficiencies, creating a website that caters to a diverse audience.
+•	Font Face: I made thoughtful font choices and maintained a consistent font size across the website. By prioritizing readability and steering clear of overly stylized or small fonts, I aimed to create a visually accessible design that accommodates users with varying visual abilities.
+•	Alt Text: I implemented descriptive alt text for images throughout the website. This allows screen readers to convey the visual content to users with visual impairments, ensuring that everyone, regardless of their ability to see images, can comprehend the context and information being communicated.
+•	Keyboard Navigation: I enhanced the website's navigation to be keyboard-friendly, particularly on the homepage where it was necessary to hand-code it with accessibility. By prioritizing keyboard accessibility, I aimed to provide an easy and efficient browsing experience for users who rely on keyboard input or assistive technologies. This ensures that individuals with motor disabilities or those who prefer keyboard shortcuts can navigate the site seamlessly.
+
+5.	Responsiveness:
+•	Media Queries: I implemented media queries in the code to apply specific styles based on the screen width. For instance, styles within the @media (max-width: 600px) block are designed for smaller screens.
+•	Flexible Layout: To ensure a flexible layout, the design incorporates principles that adjust the width of elements like navigation (nav), columns, and images to adapt to varying screen sizes.
+•	Hamburger Menu: For screens below 600px, a hamburger menu is integrated to enhance navigation on smaller devices. The menu is activated through a button and features a dropdown layout for links.
+•	Font Size Adjustments: I made adjustments to font sizes for headers (h1, h2) and other elements to ensure optimal readability on smaller screens.
+•	Image Responsiveness: Images within the photo gallery are styled to maintain responsiveness, with varying column widths and max-width constraints to adapt to different screen sizes.
+•	Container Adjustments: The .container class is used to ensure that the layout adjusts to the screen width, particularly for the slideshow section, which employs a fixed position.
+•	Button and Hover Effects: Buttons and hover effects are adapted for touch-friendly interactions, such as larger buttons and adjusted color contrasts for improved visibility. There are hover effects on all links, as well as a hover effect on all body text to increase immediate feedback for user interaction and also increase contrast of the text for readability. 
+•	Visibility Toggle: Certain elements, like the slideshow content ( .bgimg .content), are toggled based on screen width, ensuring a cleaner and more effective display.
+
+6.	User Experience (UX):
+In developing the design, I prioritized user experience by implementing several user-centric design decisions. Firstly, the integration of media queries enables a responsive design, ensuring a seamless experience across various screen sizes. The flexible layout principles employed, adjusting the width of elements based on screen dimensions, contribute to enhanced usability and readability.
+The inclusion of a hamburger menu for screens below 600px addresses the specific needs of users on smaller devices, providing a more intuitive and accessible navigation experience. Font size adjustments were made to headers and other elements to optimize readability, especially on smaller screens.
+In terms of interaction design, buttons and hover effects were tailored for touch-friendly interactions, considering the prevalence of touchscreens on mobile devices. Additionally, the visibility toggle for certain elements, such as the slideshow content, was implemented to maintain a clean and effective display, especially on screens with limited real estate.
+Overall, these user-centric design decisions aim to create a positive and adaptable user experience, accommodating a diverse range of devices and ensuring usability across different contexts.
+7.	Usage:
+Navigating through the website is designed to be intuitive. The main navigation menu is accessible through the header, allowing users to explore different sections. On smaller screens (600px and below), a hamburger menu appears for a streamlined experience.
+The homepage features a photo gallery with interactive elements. Users can click on individual images to view more details or access specific project pages. The slideshow section showcases a dynamic display of project highlights; users can navigate through slides using the provided buttons.
+To further engage with content, users can interact with the slideshow buttons, each corresponding to a distinct project. Additionally, the website incorporates touch-friendly button sizes and hover effects for a responsive and user-friendly experience.
+
+8.	Known Issues:
+Please note that, due to time constraints, not all photos have complete alt text, and a portion lacks compression. This issue is acknowledged, and future updates will address these accessibility and performance concerns to ensure a more inclusive and optimized user experience.
+
+9.	Future Enhancements:
+Future updates may include additional navigation features based on user feedback. Enhancements could involve improved ways to navigate between project pages, providing users with even more accessible and seamless exploration of the content. Your input is invaluable, and these enhancements will be prioritized based on user needs and preferences.
+
+10.	Credits
+•	https://www.youtube.com/watch?v=Y3s0_Vy6Uy0 – image slider and animations
+•	How To Create Image Hover Overlay Effects (w3schools.com) – image cover/overlay
+
+Copyright Jaden Chee 2023
+Contact Me: ☎ +1 508-690-6091 |   jaden.chee@duke.edu |  https://www.linkedin.com/in/jaden-chee/
