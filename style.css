@@ -27,6 +27,7 @@ body{
 
 @media (max-width: 400px){
     body {background-color: rgb(14, 45, 13);
+    background-image: none;
     /* ------ */
     padding: 0 5%;
     font-family: 'Courier New', Courier, monospace;
