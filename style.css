@@ -13,11 +13,12 @@ Fonts:
 Serif: Courier
 Sans-Serif: Helvetica
 */
+
+/* GENERAL STRUCTURE */
 body{
     background-color: rgb(14, 45, 13);
     /* film grain filter for the background */
     background-image:url(noise.svg);
-    /* background-blend-mode: hard-light; */
     /* ------ */
     padding: 0 5%;
     font-family: 'Courier New', Courier, monospace;
@@ -68,7 +69,6 @@ nav{
     font-family: 'Courier New', Courier, monospace;
     font-size: 90%;
     font-weight: bolder;
-    /* margin-right:10px; */
     text-align: right;
     width: 45%;
     float:right;
@@ -120,21 +120,6 @@ aside{
     border-radius: 5px;
     line-height: 1.5em;
 }
-
-/* homepage images */
-.name{
-    font-size: 2em;
-    color: #e3b974;
-    font-family: 'Courier New', Courier, monospace;
-    /* text-shadow: 5px 5px 3px #000; */
-}
-
-/* .description{
-    font-size: 1em;
-    color: #e3b974;
-    font-family: 'Courier New', Courier, monospace;
-    text-shadow: 2px 2px 2px #051005;
-} */
 
 body p:hover{
     background-color: black;
@@ -193,8 +178,8 @@ ul{
     nav.dropdown button {
       display: block;
       padding: 10px;
-      background-color: #333; /* Background color for the button */
-      color: white; /* Text color for the button */
+      background-color: #333; 
+      color: white;
       border: none;
       cursor: pointer;
     }
@@ -233,7 +218,7 @@ ul{
     }
   }
 
-  /* photo gallery */
+  /* PHOTO GALLERY GRID */
 
   .row {
     width:100%;
@@ -275,7 +260,7 @@ ul{
     height: auto;
   }
 
-  /* for overview pages */
+  /* PROJ DESCRIPTION PHOTO OVERLAY */
     .overlay{
     top: 0;
     bottom: 0;
@@ -318,11 +303,14 @@ ul{
     background-color: rgba(14, 45, 13, 0.5);
     z-index: 222222;
   }
-  
 
-  /* overlay source: https://www.w3schools.com/howto/howto_css_image_overlay.asp */
+/* HOMEPAGE IMAGAE SLIDES */
+.name{
+    font-size: 2em;
+    color: #e3b974;
+    font-family: 'Courier New', Courier, monospace;
+}
 
-  /* Images Slides */ 
   
 .container{
     position: fixed;
@@ -658,13 +646,6 @@ a.button_s:hover{
         display: block;
         z-index: 222222;
     }
-
-    /* .bgimg .content{
-        width: 100%;
-        display: block;
-        z-index: 222222;
-        position: relative;
-    } */
 
     .bgimg .content{
         right:50%;
