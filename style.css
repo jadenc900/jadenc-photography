@@ -14,7 +14,7 @@ Serif: Courier
 Sans-Serif: Helvetica
 */
 body{
-    background-color: rgba(14, 45, 13, 1);
+    background-color: rgb(14, 45, 13);
     /* film grain filter for the background */
     background-image:url(noise.svg);
     background-blend-mode: multiply;
