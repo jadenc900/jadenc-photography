@@ -6,12 +6,12 @@
     <filter id='n' x='0' y='0'>
             <feTurbulence
               type='perlinNoise'
-              baseFrequency='0.80'
+              baseFrequency='0.90'
               stitchTiles='stitch'/>
     </filter>
 
-    <rect width='300' height='300' fill='#fff'/>
-    <rect width='300' height='300' filter="url(#n)" opacity='0.80'/>
+    <rect width='300' height='300' fill='rgb(14, 35, 13)'/>
+    <rect width='300' height='300' filter="url(#n)" opacity='0.60'/>
 </svg>
 
 <!-- Source: https://css-tricks.com/grainy-gradients/ 

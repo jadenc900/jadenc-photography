@@ -17,7 +17,7 @@ body{
     background-color: rgb(14, 45, 13);
     /* film grain filter for the background */
     background-image:url(noise.svg);
-    background-blend-mode: multiply;
+    /* background-blend-mode: hard-light; */
     /* ------ */
     padding: 0 5%;
     font-family: 'Courier New', Courier, monospace;
