@@ -25,16 +25,6 @@ body{
     color: #e3b974;
 }
 
-@media (max-width: 400px){
-    body {background-color: rgb(14, 45, 13);
-    background-image: none;
-    /* ------ */
-    padding: 0 5%;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    color: #e3b974;}
-}
-
 header{
     align-content: left;
     width: 100%;
