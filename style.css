@@ -236,8 +236,8 @@ ul{
   }
 
   .column2s {
-    flex: 50%;
-    max-width: 50%;
+    flex: 45%;
+    max-width: 100%;
     padding: 0 4px;
     position: relative;
   }
