@@ -1,11 +1,12 @@
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 10px; /* Adjust the gap between images */
+    grid-template-columns: 45% 45%;
+    grid-gap: 0px; /* Adjust the gap between images */
+    display: inline;
   }
   
   .grid-item {
-    /* You can add styling for the grid items if needed */
+    size: 300px;
   }
   
   .top-left {
