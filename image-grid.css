@@ -1,0 +1,20 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px; /* Adjust the gap between images */
+  }
+  
+  .grid-item {
+    /* You can add styling for the grid items if needed */
+  }
+  
+  .top-left {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  .bottom-right {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
